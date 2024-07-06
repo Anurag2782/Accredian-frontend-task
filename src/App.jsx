@@ -26,7 +26,7 @@ const App = () => {
   };
 
   const handleSubmit = (data) => {
-    axios.post('/api/referrals', data)
+    axios.post('https://accredian-backend-task-18ar.onrender.com/api/referrals', data)
       .then(response => {
         console.log('Referral submitted:', response.data);
         setModalOpen(false);
